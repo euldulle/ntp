@@ -2154,6 +2154,22 @@ case "$ntp_ok" in
 esac
 AC_MSG_RESULT([$ntp_ok])
 
+AC_MSG_CHECKING([HP 5071A Cs standard])
+AC_ARG_ENABLE(
+    [HP5071A],
+    [AS_HELP_STRING(
+    [--enable-HP5071A],
+    [+ HP 5071A Cs standard]
+    )],
+    [ntp_ok=$enableval],
+    [ntp_ok=$ntp_eac]
+)
+if test "$ntp_ok" = "yes"; then
+    ntp_refclock=yes
+    AC_DEFINE([CLOCK_HP5071A], 1, [HP 5071A Cs standard?])
+fi
+AC_MSG_RESULT([$ntp_ok])
+
 AC_MSG_CHECKING([IRIG audio decoder])
 AC_ARG_ENABLE(
     [IRIG],

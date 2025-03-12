@@ -138,6 +138,12 @@ extern	struct refclock	refclock_atom;
 #define refclock_atom	refclock_none
 #endif
 
+#ifdef CLOCK_HP5071A
+extern  struct refclock refclock_hp5071a;
+#else
+#define refclock_hp5071a refclock_none
+#endif
+
 #ifdef CLOCK_HPGPS
 extern	struct refclock	refclock_hpgps;
 #else

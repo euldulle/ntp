@@ -284,6 +284,7 @@ libntpd_a_SOURCES =		\
 	refclock_hopfser.c	\
 	refclock_hopfpci.c	\
 	refclock_hpgps.c	\
+	refclock_hp5071a.c  \
 	refclock_irig.c		\
 	refclock_jjy.c		\
 	refclock_jupiter.c	\
