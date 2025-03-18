@@ -322,7 +322,8 @@ struct refclock * const refclock_conf[] = {
 	&refclock_ripencc,	/* 43 REFCLK_RIPENCC */
 	&refclock_neoclock4x,	/* 44 REFCLK_NEOCLOCK4X */
 	&refclock_tsyncpci,	/* 45 REFCLK_TSYNCPCI */
-	&refclock_gpsdjson	/* 46 REFCLK_GPSDJSON */
+	&refclock_gpsdjson,	/* 46 REFCLK_GPSDJSON */
+	&refclock_hp5071a	/* 47 REFCLK_HP5071A */
 };
 
 u_char num_refclock_conf = sizeof(refclock_conf)/sizeof(struct refclock *);

@@ -140,11 +140,11 @@ struct	refclock refclock_hp5071a = {
 #include <unistd.h>
 
 /* Table to get from month to day of the year */
-/*   const int days_of_year [12] = {
- *       0,  31,  59,  90, 120, 151, 181, 212, 243, 273, 304, 334
- *   };
-*/
-extern const int days_of_year[12];
+   const int days_of_year [12] = {
+       0,  31,  59,  90, 120, 151, 181, 212, 243, 273, 304, 334
+   };
+
+//extern const int days_of_year[12];
 
 int date2doy (int year, int mon, int day);
 void mjdtocal(int mjd, int *y, int*m, int*d);
