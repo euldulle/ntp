@@ -1,0 +1,13 @@
+# steps to build/install ntp with hp5071
+# fm@obs-besancon.fr
+sudo apt install autoconf libtool lynx libssl-dev libedit-dev
+mkdir git
+cd git
+git clone git@gnou:/raid0/git/ntp
+git checkout 5071a
+cd ntp/
+./bootstrap 
+./configure --enable-ATOM --enable-HP5071A
+make
+sudo make install
+sudo mkdir /var/ntp /etc/ntp
