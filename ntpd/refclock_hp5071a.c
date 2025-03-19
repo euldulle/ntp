@@ -90,7 +90,7 @@
 #define	SPEED232	B9600	/* uart speed (9600 baud) */
 #define	SPEED232Z	B19200	/* uart speed (19200 baud) */
 #define	PRECISION	(-10)	/* precision assumed (about 1 ms) */
-#define	REFID		"Cs_HP5071\0"	/*  reference ID */
+#define	REFID		"5071\0"	/*  reference ID */
 #define	DESCRIPTION	"HP 5071A Cesium frequency standard" 
 
 #define SMAX            23*80+1 /* for :SYSTEM:PRINT? status screen response */
