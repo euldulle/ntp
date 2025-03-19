@@ -11,3 +11,7 @@ cd ntp/
 make
 sudo make install
 sudo mkdir /var/ntp /etc/ntp
+sudo cp _etc_init.d_ntpd /etc/init.d/ntpd
+sudo cp ntp.conf /etc
+sudo systemctl enable ntpd
+sudo reboot
